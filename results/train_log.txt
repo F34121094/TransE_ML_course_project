@@ -1,0 +1,151 @@
+device = cuda (NVIDIA GeForce RTX 4060 Laptop GPU)
+FB15k-237: 14541 entities, 237 relations, train/valid/test = 272115/17535/20466
+relation categories: {'1-1': 17, '1-N': 26, 'N-1': 86, 'N-N': 108}
+
+===== transe: 階段 A 超參數搜尋 =====
+[transe_k50_lr0.01_m1.0_L1] ep   25 loss 0.0492 | valid raw MR 598.6 H@10 21.91% | filt MR 445.7 H@10 27.93% MRR 0.1504 * | 15s
+[transe_k50_lr0.01_m1.0_L1] ep   50 loss 0.0386 | valid raw MR 551.7 H@10 23.72% | filt MR 388.7 H@10 30.76% MRR 0.1723 * | 23s
+[transe_k50_lr0.01_m1.0_L1] ep   75 loss 0.0345 | valid raw MR 536.6 H@10 24.58% | filt MR 368.7 H@10 31.69% MRR 0.1761 * | 31s
+[transe_k50_lr0.01_m1.0_L1] ep  100 loss 0.0317 | valid raw MR 519.6 H@10 25.57% | filt MR 349.7 H@10 33.03% MRR 0.1869 * | 40s
+[transe_k50_lr0.01_m1.0_L2] ep   25 loss 0.1362 | valid raw MR 566.5 H@10 25.53% | filt MR 437.4 H@10 33.43% MRR 0.1909 * | 6s
+[transe_k50_lr0.01_m1.0_L2] ep   50 loss 0.1120 | valid raw MR 468.2 H@10 26.20% | filt MR 337.9 H@10 33.67% MRR 0.1955 * | 12s
+[transe_k50_lr0.01_m1.0_L2] ep   75 loss 0.1064 | valid raw MR 440.3 H@10 26.88% | filt MR 308.9 H@10 34.60% MRR 0.2015 * | 18s
+[transe_k50_lr0.01_m1.0_L2] ep  100 loss 0.1040 | valid raw MR 426.2 H@10 26.65% | filt MR 295.1 H@10 34.17% MRR 0.2007 * | 25s
+[transe_k50_lr0.01_m2.0_L1] ep   25 loss 0.1070 | valid raw MR 517.2 H@10 24.68% | filt MR 364.2 H@10 31.97% MRR 0.1826 * | 9s
+[transe_k50_lr0.01_m2.0_L1] ep   50 loss 0.0899 | valid raw MR 480.3 H@10 25.57% | filt MR 322.2 H@10 33.43% MRR 0.1892 * | 18s
+[transe_k50_lr0.01_m2.0_L1] ep   75 loss 0.0839 | valid raw MR 462.8 H@10 27.00% | filt MR 301.4 H@10 35.08% MRR 0.2058 * | 26s
+[transe_k50_lr0.01_m2.0_L1] ep  100 loss 0.0793 | valid raw MR 446.8 H@10 27.41% | filt MR 285.2 H@10 35.51% MRR 0.2056 * | 35s
+[transe_k50_lr0.01_m2.0_L2] ep   25 loss 0.8632 | valid raw MR 728.9 H@10 17.50% | filt MR 604.5 H@10 21.32% MRR 0.1206 * | 6s
+[transe_k50_lr0.01_m2.0_L2] ep   50 loss 0.8215 | valid raw MR 682.4 H@10 16.25% | filt MR 557.6 H@10 19.60% MRR 0.1108 * | 13s
+[transe_k50_lr0.01_m2.0_L2] ep   75 loss 0.8130 | valid raw MR 711.6 H@10 14.61% | filt MR 586.3 H@10 17.70% MRR 0.0958 | 21s
+[transe_k50_lr0.01_m2.0_L2] ep  100 loss 0.8111 | valid raw MR 683.3 H@10 14.36% | filt MR 558.6 H@10 17.44% MRR 0.0930 | 30s
+[transe_k50_lr0.01_m5.0_L1] ep   25 loss 0.8490 | valid raw MR 582.7 H@10 22.44% | filt MR 441.5 H@10 28.65% MRR 0.1636 * | 11s
+[transe_k50_lr0.01_m5.0_L1] ep   50 loss 0.8298 | valid raw MR 557.4 H@10 23.38% | filt MR 415.4 H@10 30.04% MRR 0.1693 * | 23s
+[transe_k50_lr0.01_m5.0_L1] ep   75 loss 0.8305 | valid raw MR 548.9 H@10 23.87% | filt MR 407.6 H@10 30.48% MRR 0.1726 * | 35s
+[transe_k50_lr0.01_m5.0_L1] ep  100 loss 0.8370 | valid raw MR 543.5 H@10 23.96% | filt MR 402.2 H@10 30.38% MRR 0.1742 * | 45s
+[transe_k50_lr0.01_m5.0_L2] ep   25 loss 3.8632 | valid raw MR 728.9 H@10 17.50% | filt MR 604.5 H@10 21.32% MRR 0.1206 * | 7s
+[transe_k50_lr0.01_m5.0_L2] ep   50 loss 3.8215 | valid raw MR 682.4 H@10 16.25% | filt MR 557.6 H@10 19.60% MRR 0.1108 * | 14s
+[transe_k50_lr0.01_m5.0_L2] ep   75 loss 3.8130 | valid raw MR 711.6 H@10 14.61% | filt MR 586.3 H@10 17.70% MRR 0.0958 | 21s
+[transe_k50_lr0.01_m5.0_L2] ep  100 loss 3.8111 | valid raw MR 683.3 H@10 14.36% | filt MR 558.6 H@10 17.44% MRR 0.0930 | 27s
+[transe_k100_lr0.01_m1.0_L1] ep   25 loss 0.0504 | valid raw MR 650.2 H@10 21.65% | filt MR 487.5 H@10 27.58% MRR 0.1525 * | 10s
+[transe_k100_lr0.01_m1.0_L1] ep   50 loss 0.0406 | valid raw MR 617.3 H@10 23.06% | filt MR 446.8 H@10 30.02% MRR 0.1658 * | 19s
+[transe_k100_lr0.01_m1.0_L1] ep   75 loss 0.0357 | valid raw MR 604.8 H@10 24.09% | filt MR 430.4 H@10 30.99% MRR 0.1719 * | 29s
+[transe_k100_lr0.01_m1.0_L1] ep  100 loss 0.0333 | valid raw MR 585.8 H@10 24.80% | filt MR 409.0 H@10 31.41% MRR 0.1796 * | 39s
+[transe_k100_lr0.01_m1.0_L2] ep   25 loss 0.1353 | valid raw MR 557.5 H@10 26.60% | filt MR 427.5 H@10 34.42% MRR 0.1990 * | 13s
+[transe_k100_lr0.01_m1.0_L2] ep   50 loss 0.1114 | valid raw MR 459.9 H@10 26.81% | filt MR 328.7 H@10 34.51% MRR 0.2029 * | 26s
+[transe_k100_lr0.01_m1.0_L2] ep   75 loss 0.1059 | valid raw MR 433.4 H@10 27.35% | filt MR 301.4 H@10 35.14% MRR 0.2065 * | 38s
+[transe_k100_lr0.01_m1.0_L2] ep  100 loss 0.1037 | valid raw MR 421.4 H@10 27.03% | filt MR 289.7 H@10 34.56% MRR 0.2045 * | 45s
+[transe_k100_lr0.01_m2.0_L1] ep   25 loss 0.1715 | valid raw MR 593.2 H@10 24.54% | filt MR 432.6 H@10 30.75% MRR 0.1772 * | 9s
+[transe_k100_lr0.01_m2.0_L1] ep   50 loss 0.1698 | valid raw MR 579.5 H@10 25.09% | filt MR 414.3 H@10 32.46% MRR 0.1799 * | 18s
+[transe_k100_lr0.01_m2.0_L1] ep   75 loss 0.1658 | valid raw MR 565.1 H@10 24.91% | filt MR 398.1 H@10 32.27% MRR 0.1855 * | 27s
+[transe_k100_lr0.01_m2.0_L1] ep  100 loss 0.1637 | valid raw MR 548.1 H@10 25.96% | filt MR 380.1 H@10 33.39% MRR 0.1891 * | 36s
+[transe_k100_lr0.01_m2.0_L2] ep   25 loss 0.8628 | valid raw MR 739.4 H@10 17.64% | filt MR 615.1 H@10 21.49% MRR 0.1216 * | 6s
+[transe_k100_lr0.01_m2.0_L2] ep   50 loss 0.8227 | valid raw MR 676.6 H@10 16.76% | filt MR 551.6 H@10 20.16% MRR 0.1113 * | 12s
+[transe_k100_lr0.01_m2.0_L2] ep   75 loss 0.8133 | valid raw MR 680.2 H@10 15.11% | filt MR 554.9 H@10 18.47% MRR 0.0990 | 19s
+[transe_k100_lr0.01_m2.0_L2] ep  100 loss 0.8109 | valid raw MR 689.6 H@10 14.82% | filt MR 564.6 H@10 17.80% MRR 0.0944 | 25s
+[transe_k100_lr0.01_m5.0_L1] ep   25 loss 0.7682 | valid raw MR 581.1 H@10 24.20% | filt MR 432.9 H@10 31.21% MRR 0.1762 * | 9s
+[transe_k100_lr0.01_m5.0_L1] ep   50 loss 0.7579 | valid raw MR 554.0 H@10 24.16% | filt MR 405.5 H@10 31.22% MRR 0.1769 * | 17s
+[transe_k100_lr0.01_m5.0_L1] ep   75 loss 0.7674 | valid raw MR 542.9 H@10 25.32% | filt MR 394.1 H@10 32.15% MRR 0.1834 * | 26s
+[transe_k100_lr0.01_m5.0_L1] ep  100 loss 0.7604 | valid raw MR 547.7 H@10 24.87% | filt MR 399.2 H@10 31.81% MRR 0.1804 | 34s
+[transe_k100_lr0.01_m5.0_L2] ep   25 loss 3.8628 | valid raw MR 739.4 H@10 17.64% | filt MR 615.1 H@10 21.49% MRR 0.1216 * | 6s
+[transe_k100_lr0.01_m5.0_L2] ep   50 loss 3.8227 | valid raw MR 676.6 H@10 16.76% | filt MR 551.6 H@10 20.16% MRR 0.1113 * | 12s
+[transe_k100_lr0.01_m5.0_L2] ep   75 loss 3.8133 | valid raw MR 680.2 H@10 15.11% | filt MR 554.9 H@10 18.47% MRR 0.0990 | 17s
+[transe_k100_lr0.01_m5.0_L2] ep  100 loss 3.8109 | valid raw MR 689.6 H@10 14.82% | filt MR 564.6 H@10 17.80% MRR 0.0944 | 23s
+最佳參數：{'model': 'transe', 'dim': 50, 'lr': 0.01, 'margin': 2.0, 'p': 1, 'batch_size': 2048, 'epochs': 100, 'eval_every': 25, 'patience': 5, 'optimizer': 'sgd', 'seed': 42, 'select_metric': 'filt_mr'}
+
+===== transe: 階段 B 正式訓練 =====
+[transe_k50_lr0.01_m2.0_L1] ep   25 loss 0.1070 | valid raw MR 517.2 H@10 24.68% | filt MR 364.2 H@10 31.97% MRR 0.1826 * | 8s
+[transe_k50_lr0.01_m2.0_L1] ep   50 loss 0.0899 | valid raw MR 480.3 H@10 25.57% | filt MR 322.2 H@10 33.43% MRR 0.1892 * | 16s
+[transe_k50_lr0.01_m2.0_L1] ep   75 loss 0.0839 | valid raw MR 462.8 H@10 27.00% | filt MR 301.4 H@10 35.08% MRR 0.2058 * | 24s
+[transe_k50_lr0.01_m2.0_L1] ep  100 loss 0.0793 | valid raw MR 446.8 H@10 27.41% | filt MR 285.2 H@10 35.51% MRR 0.2056 * | 33s
+[transe_k50_lr0.01_m2.0_L1] ep  125 loss 0.0765 | valid raw MR 438.6 H@10 27.78% | filt MR 274.2 H@10 36.20% MRR 0.2117 * | 40s
+[transe_k50_lr0.01_m2.0_L1] ep  150 loss 0.0752 | valid raw MR 431.4 H@10 27.88% | filt MR 268.6 H@10 36.58% MRR 0.2140 * | 48s
+[transe_k50_lr0.01_m2.0_L1] ep  175 loss 0.0747 | valid raw MR 430.2 H@10 28.11% | filt MR 265.3 H@10 36.70% MRR 0.2156 * | 56s
+[transe_k50_lr0.01_m2.0_L1] ep  200 loss 0.0732 | valid raw MR 429.3 H@10 28.16% | filt MR 264.4 H@10 36.86% MRR 0.2164 * | 69s
+[transe_k50_lr0.01_m2.0_L1] ep  225 loss 0.0719 | valid raw MR 424.7 H@10 28.13% | filt MR 258.5 H@10 37.14% MRR 0.2175 * | 86s
+[transe_k50_lr0.01_m2.0_L1] ep  250 loss 0.0723 | valid raw MR 425.5 H@10 28.57% | filt MR 258.6 H@10 37.54% MRR 0.2236 | 104s
+[transe_k50_lr0.01_m2.0_L1] ep  275 loss 0.0700 | valid raw MR 421.3 H@10 28.96% | filt MR 255.0 H@10 37.82% MRR 0.2200 * | 113s
+[transe_k50_lr0.01_m2.0_L1] ep  300 loss 0.0705 | valid raw MR 421.9 H@10 28.65% | filt MR 256.6 H@10 37.91% MRR 0.2214 | 121s
+[transe_k50_lr0.01_m2.0_L1] ep  325 loss 0.0706 | valid raw MR 417.1 H@10 28.75% | filt MR 251.0 H@10 37.90% MRR 0.2213 * | 130s
+[transe_k50_lr0.01_m2.0_L1] ep  350 loss 0.0697 | valid raw MR 424.8 H@10 28.50% | filt MR 257.6 H@10 37.31% MRR 0.2157 | 139s
+[transe_k50_lr0.01_m2.0_L1] ep  375 loss 0.0699 | valid raw MR 421.0 H@10 28.84% | filt MR 254.0 H@10 38.00% MRR 0.2244 | 148s
+[transe_k50_lr0.01_m2.0_L1] ep  400 loss 0.0697 | valid raw MR 419.6 H@10 29.08% | filt MR 251.6 H@10 37.94% MRR 0.2232 | 157s
+[transe_k50_lr0.01_m2.0_L1] ep  425 loss 0.0699 | valid raw MR 423.7 H@10 28.74% | filt MR 256.1 H@10 37.94% MRR 0.2222 | 165s
+[transe_k50_lr0.01_m2.0_L1] ep  450 loss 0.0698 | valid raw MR 420.7 H@10 29.16% | filt MR 254.4 H@10 38.33% MRR 0.2224 | 174s
+[transe_k50_lr0.01_m2.0_L1] early stop at epoch 450（最佳 epoch 325）
+
+===== transe: 階段 C 測試集評估 =====
+TEST raw MR 428.7 H@10 28.54% | filt MR 264.6 H@10 37.76% MRR 0.2194
+by category: {'1-1': {'n': 192, 'head_h10': 0.5260416666666666, 'tail_h10': 0.5}, '1-N': {'n': 1293, 'head_h10': 0.5498839907192575, 'tail_h10': 0.06419180201082754}, 'N-1': {'n': 4508, 'head_h10': 0.08207630878438332, 'tail_h10': 0.790150842945874}, 'N-N': {'n': 14473, 'head_h10': 0.2987632142610378, 'tail_h10': 0.4288675464658329}}
+
+===== unstructured: 階段 A 超參數搜尋 =====
+[unstructured_k50_lr0.01_m1.0_L1] ep   25 loss 0.0957 | valid raw MR 1673.5 H@10 2.87% | filt MR 1526.1 H@10 3.53% MRR 0.0189 * | 8s
+[unstructured_k50_lr0.01_m1.0_L1] ep   50 loss 0.0825 | valid raw MR 1584.6 H@10 2.86% | filt MR 1428.2 H@10 3.71% MRR 0.0199 * | 16s
+[unstructured_k50_lr0.01_m1.0_L1] ep   75 loss 0.0789 | valid raw MR 1571.7 H@10 2.95% | filt MR 1409.3 H@10 3.78% MRR 0.0197 * | 26s
+[unstructured_k50_lr0.01_m1.0_L1] ep  100 loss 0.0760 | valid raw MR 1531.4 H@10 2.80% | filt MR 1367.8 H@10 3.66% MRR 0.0199 * | 34s
+[unstructured_k50_lr0.01_m1.0_L2] ep   25 loss 0.3354 | valid raw MR 1974.4 H@10 2.95% | filt MR 1845.8 H@10 4.39% MRR 0.0208 * | 5s
+[unstructured_k50_lr0.01_m1.0_L2] ep   50 loss 0.3044 | valid raw MR 1764.1 H@10 2.71% | filt MR 1634.4 H@10 3.78% MRR 0.0194 * | 9s
+[unstructured_k50_lr0.01_m1.0_L2] ep   75 loss 0.2985 | valid raw MR 1691.9 H@10 2.59% | filt MR 1561.6 H@10 3.69% MRR 0.0190 * | 14s
+[unstructured_k50_lr0.01_m1.0_L2] ep  100 loss 0.2963 | valid raw MR 1673.6 H@10 2.59% | filt MR 1543.6 H@10 3.62% MRR 0.0190 * | 20s
+[unstructured_k50_lr0.01_m2.0_L1] ep   25 loss 0.2726 | valid raw MR 1432.3 H@10 3.04% | filt MR 1286.6 H@10 4.03% MRR 0.0209 * | 8s
+[unstructured_k50_lr0.01_m2.0_L1] ep   50 loss 0.2533 | valid raw MR 1417.6 H@10 2.94% | filt MR 1263.7 H@10 3.91% MRR 0.0207 * | 16s
+[unstructured_k50_lr0.01_m2.0_L1] ep   75 loss 0.2488 | valid raw MR 1396.5 H@10 3.05% | filt MR 1242.5 H@10 4.12% MRR 0.0214 * | 25s
+[unstructured_k50_lr0.01_m2.0_L1] ep  100 loss 0.2435 | valid raw MR 1369.8 H@10 3.05% | filt MR 1214.6 H@10 4.03% MRR 0.0215 * | 33s
+[unstructured_k50_lr0.01_m2.0_L2] ep   25 loss 1.1210 | valid raw MR 2526.5 H@10 2.32% | filt MR 2401.8 H@10 2.96% MRR 0.0158 * | 6s
+[unstructured_k50_lr0.01_m2.0_L2] ep   50 loss 1.0735 | valid raw MR 2537.8 H@10 1.91% | filt MR 2413.7 H@10 2.50% MRR 0.0143 | 11s
+[unstructured_k50_lr0.01_m2.0_L2] ep   75 loss 1.0658 | valid raw MR 2525.5 H@10 1.86% | filt MR 2402.1 H@10 2.46% MRR 0.0138 | 16s
+[unstructured_k50_lr0.01_m2.0_L2] ep  100 loss 1.0632 | valid raw MR 2532.3 H@10 1.86% | filt MR 2408.8 H@10 2.47% MRR 0.0138 | 22s
+[unstructured_k50_lr0.01_m5.0_L1] ep   25 loss 1.4206 | valid raw MR 1612.1 H@10 2.81% | filt MR 1482.3 H@10 3.62% MRR 0.0192 * | 8s
+[unstructured_k50_lr0.01_m5.0_L1] ep   50 loss 1.4023 | valid raw MR 1588.7 H@10 2.77% | filt MR 1457.2 H@10 3.61% MRR 0.0189 * | 16s
+[unstructured_k50_lr0.01_m5.0_L1] ep   75 loss 1.4012 | valid raw MR 1563.2 H@10 2.73% | filt MR 1431.5 H@10 3.69% MRR 0.0191 * | 24s
+[unstructured_k50_lr0.01_m5.0_L1] ep  100 loss 1.3952 | valid raw MR 1580.5 H@10 2.88% | filt MR 1450.2 H@10 3.92% MRR 0.0196 | 32s
+[unstructured_k50_lr0.01_m5.0_L2] ep   25 loss 4.1210 | valid raw MR 2526.5 H@10 2.32% | filt MR 2401.8 H@10 2.96% MRR 0.0158 * | 5s
+[unstructured_k50_lr0.01_m5.0_L2] ep   50 loss 4.0735 | valid raw MR 2537.8 H@10 1.91% | filt MR 2413.7 H@10 2.50% MRR 0.0143 | 11s
+[unstructured_k50_lr0.01_m5.0_L2] ep   75 loss 4.0658 | valid raw MR 2525.5 H@10 1.86% | filt MR 2402.1 H@10 2.46% MRR 0.0138 | 17s
+[unstructured_k50_lr0.01_m5.0_L2] ep  100 loss 4.0632 | valid raw MR 2532.3 H@10 1.86% | filt MR 2408.8 H@10 2.47% MRR 0.0138 | 22s
+[unstructured_k100_lr0.01_m1.0_L1] ep   25 loss 0.0895 | valid raw MR 1731.4 H@10 2.58% | filt MR 1579.6 H@10 3.37% MRR 0.0183 * | 8s
+[unstructured_k100_lr0.01_m1.0_L1] ep   50 loss 0.0786 | valid raw MR 1663.3 H@10 2.70% | filt MR 1503.5 H@10 3.57% MRR 0.0193 * | 16s
+[unstructured_k100_lr0.01_m1.0_L1] ep   75 loss 0.0755 | valid raw MR 1640.9 H@10 2.62% | filt MR 1477.3 H@10 3.42% MRR 0.0190 * | 24s
+[unstructured_k100_lr0.01_m1.0_L1] ep  100 loss 0.0745 | valid raw MR 1651.8 H@10 2.70% | filt MR 1485.7 H@10 3.63% MRR 0.0196 | 33s
+[unstructured_k100_lr0.01_m1.0_L2] ep   25 loss 0.3328 | valid raw MR 1950.7 H@10 3.31% | filt MR 1821.5 H@10 4.69% MRR 0.0220 * | 5s
+[unstructured_k100_lr0.01_m1.0_L2] ep   50 loss 0.3037 | valid raw MR 1755.5 H@10 2.79% | filt MR 1625.8 H@10 3.93% MRR 0.0197 * | 11s
+[unstructured_k100_lr0.01_m1.0_L2] ep   75 loss 0.2984 | valid raw MR 1689.8 H@10 2.64% | filt MR 1559.5 H@10 3.84% MRR 0.0192 * | 16s
+[unstructured_k100_lr0.01_m1.0_L2] ep  100 loss 0.2962 | valid raw MR 1672.2 H@10 2.60% | filt MR 1542.2 H@10 3.61% MRR 0.0190 * | 22s
+[unstructured_k100_lr0.01_m2.0_L1] ep   25 loss 0.2401 | valid raw MR 1484.1 H@10 3.22% | filt MR 1335.7 H@10 4.22% MRR 0.0215 * | 8s
+[unstructured_k100_lr0.01_m2.0_L1] ep   50 loss 0.2244 | valid raw MR 1457.8 H@10 3.03% | filt MR 1301.0 H@10 4.13% MRR 0.0214 * | 16s
+[unstructured_k100_lr0.01_m2.0_L1] ep   75 loss 0.2214 | valid raw MR 1429.3 H@10 3.16% | filt MR 1272.6 H@10 4.28% MRR 0.0219 * | 24s
+[unstructured_k100_lr0.01_m2.0_L1] ep  100 loss 0.2185 | valid raw MR 1447.7 H@10 3.21% | filt MR 1289.0 H@10 4.29% MRR 0.0220 | 31s
+[unstructured_k100_lr0.01_m2.0_L2] ep   25 loss 1.1168 | valid raw MR 2504.3 H@10 2.34% | filt MR 2379.0 H@10 3.07% MRR 0.0159 * | 5s
+[unstructured_k100_lr0.01_m2.0_L2] ep   50 loss 1.0721 | valid raw MR 2533.4 H@10 1.98% | filt MR 2409.2 H@10 2.56% MRR 0.0145 | 11s
+[unstructured_k100_lr0.01_m2.0_L2] ep   75 loss 1.0655 | valid raw MR 2525.1 H@10 1.90% | filt MR 2401.8 H@10 2.51% MRR 0.0140 | 16s
+[unstructured_k100_lr0.01_m2.0_L2] ep  100 loss 1.0630 | valid raw MR 2531.9 H@10 1.89% | filt MR 2408.3 H@10 2.45% MRR 0.0138 | 21s
+[unstructured_k100_lr0.01_m5.0_L1] ep   25 loss 1.1903 | valid raw MR 1469.3 H@10 3.14% | filt MR 1337.7 H@10 4.15% MRR 0.0206 * | 8s
+[unstructured_k100_lr0.01_m5.0_L1] ep   50 loss 1.1715 | valid raw MR 1471.5 H@10 3.05% | filt MR 1338.1 H@10 4.01% MRR 0.0205 | 16s
+[unstructured_k100_lr0.01_m5.0_L1] ep   75 loss 1.1712 | valid raw MR 1431.5 H@10 3.16% | filt MR 1297.8 H@10 4.11% MRR 0.0208 * | 24s
+[unstructured_k100_lr0.01_m5.0_L1] ep  100 loss 1.1649 | valid raw MR 1448.5 H@10 3.19% | filt MR 1314.1 H@10 4.21% MRR 0.0209 | 32s
+[unstructured_k100_lr0.01_m5.0_L2] ep   25 loss 4.1168 | valid raw MR 2504.3 H@10 2.34% | filt MR 2379.0 H@10 3.07% MRR 0.0159 * | 6s
+[unstructured_k100_lr0.01_m5.0_L2] ep   50 loss 4.0721 | valid raw MR 2533.4 H@10 1.98% | filt MR 2409.2 H@10 2.56% MRR 0.0145 | 11s
+[unstructured_k100_lr0.01_m5.0_L2] ep   75 loss 4.0655 | valid raw MR 2525.1 H@10 1.90% | filt MR 2401.8 H@10 2.51% MRR 0.0140 | 17s
+[unstructured_k100_lr0.01_m5.0_L2] ep  100 loss 4.0630 | valid raw MR 2531.9 H@10 1.89% | filt MR 2408.3 H@10 2.45% MRR 0.0138 | 23s
+最佳參數：{'model': 'unstructured', 'dim': 50, 'lr': 0.01, 'margin': 2.0, 'p': 1, 'batch_size': 2048, 'epochs': 100, 'eval_every': 25, 'patience': 5, 'optimizer': 'sgd', 'seed': 42, 'select_metric': 'filt_mr'}
+
+===== unstructured: 階段 B 正式訓練 =====
+[unstructured_k50_lr0.01_m2.0_L1] ep   25 loss 0.2726 | valid raw MR 1432.3 H@10 3.04% | filt MR 1286.6 H@10 4.03% MRR 0.0209 * | 8s
+[unstructured_k50_lr0.01_m2.0_L1] ep   50 loss 0.2533 | valid raw MR 1417.6 H@10 2.94% | filt MR 1263.7 H@10 3.91% MRR 0.0207 * | 16s
+[unstructured_k50_lr0.01_m2.0_L1] ep   75 loss 0.2488 | valid raw MR 1396.5 H@10 3.05% | filt MR 1242.5 H@10 4.12% MRR 0.0214 * | 24s
+[unstructured_k50_lr0.01_m2.0_L1] ep  100 loss 0.2435 | valid raw MR 1369.8 H@10 3.05% | filt MR 1214.6 H@10 4.03% MRR 0.0215 * | 33s
+[unstructured_k50_lr0.01_m2.0_L1] ep  125 loss 0.2417 | valid raw MR 1393.1 H@10 3.08% | filt MR 1237.0 H@10 4.18% MRR 0.0213 | 41s
+[unstructured_k50_lr0.01_m2.0_L1] ep  150 loss 0.2408 | valid raw MR 1380.7 H@10 2.90% | filt MR 1224.1 H@10 3.88% MRR 0.0207 | 49s
+[unstructured_k50_lr0.01_m2.0_L1] ep  175 loss 0.2371 | valid raw MR 1371.4 H@10 2.92% | filt MR 1214.3 H@10 3.99% MRR 0.0212 * | 58s
+[unstructured_k50_lr0.01_m2.0_L1] ep  200 loss 0.2380 | valid raw MR 1382.8 H@10 3.08% | filt MR 1225.4 H@10 4.10% MRR 0.0214 | 67s
+[unstructured_k50_lr0.01_m2.0_L1] ep  225 loss 0.2363 | valid raw MR 1398.1 H@10 2.86% | filt MR 1239.5 H@10 3.88% MRR 0.0210 | 75s
+[unstructured_k50_lr0.01_m2.0_L1] ep  250 loss 0.2373 | valid raw MR 1385.1 H@10 3.05% | filt MR 1228.0 H@10 3.99% MRR 0.0214 | 83s
+[unstructured_k50_lr0.01_m2.0_L1] ep  275 loss 0.2348 | valid raw MR 1392.0 H@10 2.94% | filt MR 1233.6 H@10 3.90% MRR 0.0212 | 92s
+[unstructured_k50_lr0.01_m2.0_L1] ep  300 loss 0.2361 | valid raw MR 1373.9 H@10 2.95% | filt MR 1216.2 H@10 4.13% MRR 0.0213 | 100s
+[unstructured_k50_lr0.01_m2.0_L1] early stop at epoch 300（最佳 epoch 175）
+
+===== unstructured: 階段 C 測試集評估 =====
+TEST raw MR 1411.5 H@10 2.87% | filt MR 1254.8 H@10 3.97% MRR 0.0205
+by category: {'1-1': {'n': 192, 'head_h10': 0.4739583333333333, 'tail_h10': 0.4635416666666667}, '1-N': {'n': 1293, 'head_h10': 0.010054137664346482, 'tail_h10': 0.010054137664346482}, 'N-1': {'n': 4508, 'head_h10': 0.017080745341614908, 'tail_h10': 0.019077196095829637}, 'N-N': {'n': 14473, 'head_h10': 0.03896911490361363, 'tail_h10': 0.047951357700545844}}
+
+完成。結果表：D:\Desktop\115_1\專題\TransE\results\metrics.md

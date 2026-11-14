@@ -1,0 +1,26 @@
+{
+  "config": {
+    "model": "unstructured",
+    "dim": 100,
+    "lr": 0.01,
+    "margin": 2.0,
+    "p": 1,
+    "batch_size": 2048,
+    "epochs": 100,
+    "eval_every": 25,
+    "patience": 5,
+    "optimizer": "sgd",
+    "seed": 42,
+    "select_metric": "filt_mr"
+  },
+  "best_epoch": 75,
+  "best_valid": {
+    "raw_mr": 1429.2981180496151,
+    "raw_mrr": 0.01798271025730303,
+    "raw_h10": 0.031565440547476474,
+    "filt_mr": 1272.646506986028,
+    "filt_mrr": 0.021884508639034066,
+    "filt_h10": 0.0427715996578272
+  },
+  "train_seconds": 31.362481594085693
+}

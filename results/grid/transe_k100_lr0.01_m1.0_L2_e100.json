@@ -1,0 +1,26 @@
+{
+  "config": {
+    "model": "transe",
+    "dim": 100,
+    "lr": 0.01,
+    "margin": 1.0,
+    "p": 2,
+    "batch_size": 2048,
+    "epochs": 100,
+    "eval_every": 25,
+    "patience": 5,
+    "optimizer": "sgd",
+    "seed": 42,
+    "select_metric": "filt_mr"
+  },
+  "best_epoch": 100,
+  "best_valid": {
+    "raw_mr": 421.43761049329913,
+    "raw_mrr": 0.1517354582187449,
+    "raw_h10": 0.27028799543769605,
+    "filt_mr": 289.7124893071001,
+    "filt_mrr": 0.20448864782563816,
+    "filt_h10": 0.3455660108354719
+  },
+  "train_seconds": 45.25096106529236
+}

@@ -1,0 +1,52 @@
+
+===== TransE: K-means 掃 k =====
+  k=  2 inertia=13339.8 silhouette=0.0816
+  k=  4 inertia=12190.1 silhouette=0.0837
+  k=  6 inertia=11573.2 silhouette=0.0748
+  k=  8 inertia=11073.0 silhouette=0.0816
+  k= 10 inertia=10745.5 silhouette=0.0855
+  k= 12 inertia=10485.3 silhouette=0.0889
+  k= 14 inertia=10264.0 silhouette=0.0808
+  k= 16 inertia=10072.3 silhouette=0.0800
+  k= 18 inertia=9873.6 silhouette=0.0842
+  k= 20 inertia=9704.3 silhouette=0.0854
+  k= 22 inertia=9539.6 silhouette=0.0896
+  k= 24 inertia=9402.2 silhouette=0.0909
+  k= 26 inertia=9291.5 silhouette=0.0912
+  k= 28 inertia=9176.7 silhouette=0.0910
+  k= 30 inertia=9064.8 silhouette=0.0908
+  k= 32 inertia=8979.7 silhouette=0.0902
+  k= 34 inertia=8899.1 silhouette=0.0925
+  k= 36 inertia=8806.2 silhouette=0.0938
+  k= 38 inertia=8730.4 silhouette=0.0940
+  k= 40 inertia=8648.9 silhouette=0.0955
+  [silhouette] k=40 {'purity': 0.8908603259748298, 'nmi': 0.5999939835852848, 'ari': 0.20355932767673096}
+  [n_types] k=11 {'purity': 0.8010453201292896, 'nmi': 0.6437888346359802, 'ari': 0.41155940118259}
+===== TransE: PCA / t-SNE =====
+
+===== Unstructured: K-means 掃 k =====
+  k=  2 inertia=13306.4 silhouette=0.0818
+  k=  4 inertia=12193.5 silhouette=0.0752
+  k=  6 inertia=11494.8 silhouette=0.0769
+  k=  8 inertia=11051.0 silhouette=0.0730
+  k= 10 inertia=10672.6 silhouette=0.0742
+  k= 12 inertia=10410.5 silhouette=0.0736
+  k= 14 inertia=10153.0 silhouette=0.0781
+  k= 16 inertia=9949.8 silhouette=0.0747
+  k= 18 inertia=9801.8 silhouette=0.0770
+  k= 20 inertia=9669.6 silhouette=0.0730
+  k= 22 inertia=9554.5 silhouette=0.0709
+  k= 24 inertia=9436.2 silhouette=0.0712
+  k= 26 inertia=9317.1 silhouette=0.0759
+  k= 28 inertia=9217.9 silhouette=0.0749
+  k= 30 inertia=9156.6 silhouette=0.0751
+  k= 32 inertia=9050.6 silhouette=0.0738
+  k= 34 inertia=8973.4 silhouette=0.0737
+  k= 36 inertia=8932.8 silhouette=0.0665
+  k= 38 inertia=8859.3 silhouette=0.0646
+  k= 40 inertia=8809.5 silhouette=0.0615
+  [silhouette] k=2 {'purity': 0.3913073378722234, 'nmi': 0.19882197037507196, 'ari': 0.15488422943366437}
+  [n_types] k=11 {'purity': 0.5950072209614194, 'nmi': 0.3744450888656351, 'ari': 0.2300504451632787}
+===== Unstructured: PCA / t-SNE =====
+
+完成：D:\Desktop\115_1\專題\TransE\results\analysis\analysis.md

@@ -1,0 +1,7 @@
+# PyTorch 請依 README 用 CUDA 版的 index-url 安裝（這裡寫的是實際測試過的版本）
+torch==2.6.0
+numpy==2.5.4
+pandas==3.1.1
+scikit-learn==1.9.1
+matplotlib==3.11.2
+tqdm==4.70.1
