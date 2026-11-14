@@ -1,7 +1,5 @@
 # 報告大綱：以 TransE 學習知識圖譜表示，並以非監督方法分析其結構
 
-> 【】中的內容是寫作提示；數字來自 `results/metrics.md` 與 `results/analysis/analysis.md`。
-
 ## 1. 動機
 
 - 知識圖譜（KG）把事實存成三元組 (head, relation, tail)，例如 (Stanford University, located_in, California)。
